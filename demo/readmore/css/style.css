@@ -1,0 +1,54 @@
+/*
+	 CSS-Tricks Example
+	 by Chris Coyier
+	 http://css-tricks.com
+*/
+
+.em_seo * { margin: 0; padding: 0; }
+.em_seo article,
+.em_seo aside,
+.em_seo figure, 
+.em_seo footer, 
+.em_seo header, 
+.em_seo hgroup,
+.em_seo menu, 
+.em_seo nav, 
+.em_seo section { display: block; }
+
+.em_seo h1 { box-shadow: 0 0 20px black; }
+
+.em_seo .button {
+   padding: 5px 10px;
+   font-size: 14px;
+   text-decoration: none;
+   vertical-align: middle;
+   background-color: #0abab5;
+   color: white;
+   transition: .2s;
+}
+.em_seo .button:active {
+    opacity: .8;
+}
+.em_seo p { margin: 0 0 15px 0; }
+.em_seo .sidebar-box { 
+    /* float: left;  */
+    margin: 0 20px 0 0;
+}
+.em_seo .sidebar-box {
+    max-height: 120px;
+    position: relative;
+    padding: 20px;
+    overflow: hidden;
+}
+.em_seo .sidebar-box .read-more { 
+    position: absolute; 
+    bottom: 0; left: 0;
+    width: 100%; 
+    text-align: center; 
+    margin: 0; 
+    padding: 30px 0 30px 0; 
+    
+    /* "transparent" only works here because == rgba(0,0,0,0) */ 
+    background-image: -moz-linear-gradient(top, transparent, white);
+        background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, transparent),color-stop(1, white));
+}
